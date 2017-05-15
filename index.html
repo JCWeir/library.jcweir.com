@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio Item - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Start Bootstrap</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div id="book-detail-container"></div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="page-header">Related Books</h3>
+      </div>
+      <div id="related-books-container"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Add new book</h2>
+        <form id="add-new-book">
+          <div class="form-group">
+            <label for="bookTitle">Title</label>
+            <input type="text" class="form-control" id="bookTitle" name="title" />
+          </div>
+          <div class="form-group">
+            <label for="bookAuthor">Author</label>
+            <input type="text" class="form-control" id="bookAuthor" name="author" />
+          </div>
+          <div class="form-group">
+            <label for="bookImage">Image URL</label>
+            <input type="text" class="form-control" id="bookImage" name="image" />
+          </div>
+          <div class="form-group">
+            <label for="bookDescription">Description</label>
+            <textarea id="bookDescription" name="description" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Details</label>
+            <button type="button" class="float-right btn btn-default js-add-details-item">+</button>
+            <ul class="add-form-details-container">
+              <li>
+                <input name="details[][title]" placeholder="Title" />
+                <input name="details[][value]" placeholder="Value" />
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="btn btn-default">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; JCW 2017</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
