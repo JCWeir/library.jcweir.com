@@ -5,8 +5,37 @@
  */
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    /*padding-top: 70px;*/
+    background-color: #efebe1;
+     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
+
+.navbar, .navbar-collapse {
+  background-color: #263651;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 8px;
+}
+
+.navbar-library {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+  color: #efebe1 !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+}
+
 
 footer {
     margin: 50px 0;
@@ -29,7 +58,7 @@ footer {
   display: block;
   width: 264px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid #efebe1;
   cursor: pointer;
   margin: 0 auto;
 }
@@ -39,15 +68,16 @@ footer {
 }
 
 .book-item-container:hover {
-  border: 2px solid green;
-  background-color: green;
+  border: 2px solid #263651;
+  background-color: #263651;
+ border: 2px solid #efebe1;
   color: white;
   text-decoration: none;
 }
 
 .active > .book-item-container {
-  border: 2px solid green;
-  background-color: green;
+  border: 2px solid #263651;
+  background-color: #263651;
   color: white;
 }
 
