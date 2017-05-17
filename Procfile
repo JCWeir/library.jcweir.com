@@ -1,1 +1,1 @@
-web: ruby -run -e httpd -p $PORT .
+web: node_modules/.bin/live-server --port=$PORT
